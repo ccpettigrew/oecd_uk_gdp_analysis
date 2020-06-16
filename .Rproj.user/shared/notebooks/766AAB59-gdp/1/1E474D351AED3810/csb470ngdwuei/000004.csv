@@ -1,0 +1,1 @@
+"0","simdat = WDI(indicator='NY.GDP.PCAP.KD', country=c('GB', 'FR', 'IT', 'JP', 'DE', 'NZ', 'IE', 'IS'), start=1960, end=2020)"

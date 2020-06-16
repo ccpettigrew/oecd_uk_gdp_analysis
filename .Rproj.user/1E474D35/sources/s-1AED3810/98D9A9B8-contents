@@ -1,0 +1,102 @@
+
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+library(tidyverse)
+library(WDI)
+```
+
+* The following equation is used to calculate the GDP: GDP = C + I + G + (X – M) or GDP = private consumption + gross investment + government investment + government spending + (exports – imports).
+
+Everyone is probably very aware of the importance of GDP but unaware of the metrics that make up the equation.
+
+Questions to answer
+
+Chart showing overall GDP and exports for g20 nations
+1.1 Chart showing GDP for most similar nations
+
+A breakdown of the key indicators that make up GDP:
+      2.1 private consumption 
+      2.2 gross investment 
+      2.3 government investment 
+      2.4 government spending 
+      2.5 exports 
+      2.6 imports
+
+Investigate home nation productivities
+
+
+
+```{r}
+WDIsearch('gdp')
+
+```
+
+```{r}
+WDIsearch('gdp.*capita.*constant')
+
+```
+
+```{r}
+g20dat = WDI(indicator='NY.GDP.PCAP.KD', country=c('US', 'CHN', 'JP', 'DE', 'IN', 'GB', 'FR', 'IT', 'BR', 'CA', 'RU', 'KOR', 'ES', 'AU', 'MX', 'ID', 'NL', 'SA', 'TR', 'CH'), start=1960, end=2020)
+```
+
+
+```{r}
+library(ggplot2)
+ggplot(g20dat, aes(year, NY.GDP.PCAP.KD, color=country)) + geom_line() + 
+    xlab('Year') + ylab('GDP per capita')
+```
+
+```{r}
+simdat = WDI(indicator='NY.GDP.PCAP.KD', country=c('GB', 'FR', 'IT', 'JP', 'DE', 'NZ', 'IE', 'IS'), start=1960, end=2020)
+```
+
+```{r}
+library(ggplot2)
+ggplot(simdat, aes(year, NY.GDP.PCAP.KD, color=country)) + geom_line() + 
+    xlab('Year') + ylab('GDP per capita')
+```
+
+```{r}
+ukdat = WDI(indicator='NY.GDP.PCAP.KD', country='GB', start=1960, end=2020)
+
+```
+
+```{r}
+library(ggplot2)
+ggplot(ukdat, aes(year, NY.GDP.PCAP.KD, color=country)) + geom_line() + 
+    xlab('Year') + ylab('GDP per capita')
+```
+
+
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(readxl)
+library(janitor)
+```
+
+```{r}
+gdp <- read_excel("data/UK GDP Estimates - Time Series.xlsx") 
+```
+
+#2.5 exports
+```{r}
+exports <- read_xlsx("data/Exports by business size - OECD.xlsx") %>%
+  clean_names() %>%
+  select('location', 'time', 'value')
+
+```
+
+#2..
+```{r}
+competitiveness <- readxlsx("data/Global Competitiveness Dataset.xlsx", sheet = 2) 
+```
+
+
+
+

@@ -1,0 +1,10 @@
+"0","```r
+WDIsearch('gdp.*capita.*constant')
+```"
+"1","     indicator              name                                                  
+[1,] \"6.0.GDPpc_constant\"   \"GDP per capita, PPP (constant 2011 international $) \"
+[2,] \"NY.GDP.PCAP.PP.KD.87\" \"GDP per capita, PPP (constant 1987 international $)\" 
+[3,] \"NY.GDP.PCAP.PP.KD\"    \"GDP per capita, PPP (constant 2011 international $)\" 
+[4,] \"NY.GDP.PCAP.KN\"       \"GDP per capita (constant LCU)\"                       
+[5,] \"NY.GDP.PCAP.KD\"       \"GDP per capita (constant 2010 US$)\"                  
+"

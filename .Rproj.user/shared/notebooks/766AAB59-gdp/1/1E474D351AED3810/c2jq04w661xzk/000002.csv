@@ -1,0 +1,1 @@
+"0","g20dat = WDI(indicator='NY.GDP.PCAP.KD', country=c('US', 'CHN', 'JP', 'DE', 'IN', 'GB', 'FR', 'IT', 'BR', 'CA', 'RU', 'KOR', 'ES', 'AU', 'MX', 'ID', 'NL', 'SA', 'TR', 'CH'), start=1960, end=2020)"

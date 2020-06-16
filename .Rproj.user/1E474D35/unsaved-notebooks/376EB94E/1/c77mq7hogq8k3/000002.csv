@@ -1,0 +1,9 @@
+"0","gdp <- read_excel(""data/UK GDP Estimates - Time Series.xlsx"") "
+"2","New names:
+* `Gross value added at basic prices annual deflator growth rate SA %` -> `Gross value added at basic prices annual deflator growth rate SA %...10`
+* `GDP Deflator: Quarter on quarter growth: SA %` -> `GDP Deflator: Quarter on quarter growth: SA %...45`
+* `GDP Deflator: Quarter on quarter previous year growth: SA %` -> `GDP Deflator: Quarter on quarter previous year growth: SA %...47`
+* `GDP Deflator: Year on Year growth: SA %` -> `GDP Deflator: Year on Year growth: SA %...51`
+* `Gross value added at basic prices one quarter deflator growth rate SA %` -> `Gross value added at basic prices one quarter deflator growth rate SA %...68`
+* ...
+"

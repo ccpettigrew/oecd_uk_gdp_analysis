@@ -1,0 +1,5 @@
+"0","```r
+library(ggplot2)
+ggplot(dat, aes(year, NY.GDP.PCAP.KD, color=country)) + geom_line() + 
+    xlab('Year') + ylab('GDP per capita')
+```"

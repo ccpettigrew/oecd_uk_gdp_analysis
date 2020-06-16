@@ -1,0 +1,2 @@
+"0","ukdat = WDI(indicator='NY.GDP.PCAP.KD', country='GB', start=1960, end=2020)"
+"0",""

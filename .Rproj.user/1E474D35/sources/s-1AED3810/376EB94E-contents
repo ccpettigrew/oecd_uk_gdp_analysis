@@ -1,0 +1,31 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(readxl)
+library(janitor)
+```
+
+
+# The following equation is used to calculate the GDP: GDP = C + I + G + (X – M) or GDP = private consumption + gross investment + government investment + government spending + (exports – imports)
+
+
+```{r}
+exports <- read_xlsx("data/Exports by business size - OECD.xlsx") %>%
+  clean_names() %>%
+  select('location', 'time', 'value')
+
+```
+
+```{r}
+competitiveness <- readxlsx("data/Global Competitiveness Dataset.xlsx", sheet = 2) 
+```
+
+```{r}
+gdp <- read_excel("data/UK GDP Estimates - Time Series.xlsx") 
+```
+

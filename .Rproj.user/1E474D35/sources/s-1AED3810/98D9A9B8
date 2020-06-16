@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590751438601.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "457717269",
+    "id" : "98D9A9B8",
+    "lastKnownWriteTime" : 1591007744,
+    "last_content_update" : 1591007879230,
+    "path" : "~/dg1_classnotes/week_12/project_brief/deloitte_gdp_project/gdp.Rmd",
+    "project_path" : "gdp.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "83,62",
+        "scrollLine" : "72"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
